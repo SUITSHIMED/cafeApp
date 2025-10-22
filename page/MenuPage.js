@@ -7,7 +7,7 @@ export default function MenuPage({ navigation }) {
       source={require('../assets/img1.jpeg')}  
       style={styles.background}
     >
-      <Text style={styles.title}>Motre Menu</Text>
+      <Text style={styles.title}>Notre Menu</Text>
 
       <View style={styles.prodacte}>
         <View style={styles.card}>
@@ -24,7 +24,7 @@ export default function MenuPage({ navigation }) {
 
         <View style={styles.card}>
           <Image source={require('../assets/img3.jpeg')} style={styles.image}/>
-          <Text>Late</Text>
+          <Text>Latte</Text>
           <Text>$30</Text>
         </View>
 
