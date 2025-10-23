@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 
 export default function HomePage({ navigation }) {
   const [themeColor, setThemeColor] = useState('#fff'); 
@@ -18,7 +18,7 @@ export default function HomePage({ navigation }) {
     const interval = setInterval(() => {
       i = (i + 1) % messages.length;
       setMessage(messages[i]);
-    }, 3000); 
+    }, 2000 ); 
 
     return () => clearInterval(interval);
   }, []);
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
+    fontFamily: "Cursive",
   },
   message: {
     fontSize: 20,
