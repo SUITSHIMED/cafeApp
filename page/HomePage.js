@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 
@@ -94,3 +95,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+=======
+import React from 'react';
+import { View, Text} from 'react-native';
+import { Button } from 'react-native';
+
+export default function HomePage({}) {
+  return(
+    <View>
+      <Text>hhh</Text>
+      <Button title="go page menu" onPress={()=> navigation.navigate('Menu')}/>
+    </View>
+  )
+}
+>>>>>>> 10c98f3113ef237f40e1fec6d241c4d4023c57f4
