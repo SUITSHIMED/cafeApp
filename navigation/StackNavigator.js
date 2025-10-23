@@ -1,7 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import MenuPage from '../page/MenuPage';
+import ProdacteSelector from '../page/MenuPage';
 import HomePage from '../page/HomePage';
+import MenuPage from '../page/MenuPage';
 
 const Stack = createNativeStackNavigator();
 

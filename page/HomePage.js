@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text} from 'react-native';
+import { Button } from 'react-native';
 
-export default function HomePage({ navigation }) {
-  return (
+export default function HomePage({}) {
+  return(
     <View>
       <Text>hhh</Text>
-      <Button title="Go to Menu" onPress={() => navigation.navigate('Menu')} />
+      <Button title="go page menu" onPress={()=> navigation.navigate('Menu')}/>
     </View>
-  );
+  )
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, Image, ImageBackground } from 'react-native';
+import { View, Text, Button, StyleSheet, Image, ImageBackground, } from 'react-native';
 
 export default function MenuPage({ navigation }) {
   return (
     <ImageBackground
-      source={require('../assets/img1.jpeg')}  
+      source={require('../assets/img1.jpeg')}
       style={styles.background}
     >
       <Text style={styles.title}>Motre Menu</Text>
@@ -12,8 +12,8 @@ export default function MenuPage({ navigation }) {
       <View style={styles.prodacte}>
         <View style={styles.card}>
           <Image source={require('../assets/img1.jpeg')} style={styles.image}/>
-          <Text>Espresso</Text>
-          <Text>$20</Text>
+          <Text>Cappuccino</Text>
+          <Text>$15</Text>
         </View>
 
         <View style={styles.card}>
@@ -36,6 +36,7 @@ export default function MenuPage({ navigation }) {
       </View>
 
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+
     </ImageBackground>
   );
 }
@@ -43,7 +44,7 @@ export default function MenuPage({ navigation }) {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    resizeMode: 'cover',  
+    resizeMode: 'cover', 
     paddingTop: 30,
     alignItems: 'center',
   },
